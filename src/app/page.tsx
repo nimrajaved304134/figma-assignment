@@ -7,7 +7,6 @@ import Team from "../components/team";
 import Footer from "../components/foooter";
 // import Slider from "../components/slider";
 import Categories from "@/components/category";
-import CoursesPage from "@/components/courses";
 
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <Socialproof/>
      <Categories/>
       <Acheivements/>
-      <CoursesPage/>
       <Team/>
       <Footer/>
     </div>

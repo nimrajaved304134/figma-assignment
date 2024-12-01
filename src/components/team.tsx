@@ -26,7 +26,7 @@ const Team = () => {
   const extendedTeamMembers = [...teamMembers, ...teamMembers]; // Duplicate array for sm and above
 
   return (
-    <div className="px-[24px] py-[48px] flex flex-col gap-[48px] justify-center items-center">
+    <div className="px-[24px] py-[48px] flex flex-col gap-[48px] justify-center items-center w-screen xl:w-[1280px]">
       {/* Header Section */}
       <div className="h-[120px] flex flex-col justify-center items-center gap-[24px]">
         <h1 className="text-center text-[32px] sm:[48px] leading-[41.6px] font-bold">Our team</h1>
@@ -70,7 +70,7 @@ const Team = () => {
 
       {/* View All Button */}
       <div>
-        <Button className="h-[40px] sm:h-[45px] w-[89px] sm:w-[189px] rounded-[5px] border-[1px] py-[8px] px-[14px] gap-[8px] sm:text-[25px]">
+        <Button className="h-[40px] sm:h-[45px] w-[89px] sm:w-[189px] rounded-[5px] border-[1px] py-[8px] px-[14px] gap-[8px] sm:text-[25px] text-black bg-white hover:bg-black hover:text-white  border-black">
           View All
         </Button>
       </div>

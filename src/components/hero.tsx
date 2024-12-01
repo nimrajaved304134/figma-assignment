@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center lg:flex-row items-center gap-[24px] lg:gap-[36px] py-[64px] lg:pl-[36px] xl:h-[800px]">
+    <div className="flex flex-col justify-center lg:flex-row items-center gap-[24px] lg:gap-[36px] py-[64px] lg:pl-[36px] xl:h-[800px] w-screen xl:w-[1280px]">
       {/* Text Content */}
       <div className="flex flex-col gap-[24px] lg:gap-[36px] lg:w-1/2">
         <h1 className="font-bold text-[40px] sm:text-[50px] leading-[48px] sm:leading-[60px] text-center  lg:text-left">
@@ -15,10 +15,10 @@ const Hero = () => {
           variety of subjects, taught by expert instructors.
         </p>
         <div className="flex flex-row justify-center lg:justify-start items-center pt-[10px] gap-[10px] sm:gap-[30px]">
-          <button className="h-[48px] w-[178px] rounded-[5px] border-[1px] bg-blue-600 text-white py-[12px] px-[24px] gap-[8px] hover:bg-blue-700">
+          <button className="h-[48px] w-[178px] rounded-[5px] border-[1px] bg-black text-white hover:text-black hover:bg-white hover:border-[1px] hover:border-black">
             Start learning now
           </button>
-          <button className="h-[48px] w-[178px] rounded-[5px] border-[1px] py-[12px] px-[24px] gap-[8px] hover:bg-gray-200">
+          <button className="h-[48px] w-[178px] rounded-[5px] text-black bg-white hover:bg-black hover:text-white border-[1px] border-black py-[12px] px-[24px] gap-[8px] ">
             Explore Courses
           </button>
         </div>

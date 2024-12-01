@@ -3,7 +3,7 @@ import React from 'react';
 
 const Socialproof = () => {
   return (
-    <div className="py-[48px] px-[24px] xl:py-[80px] xl:px-[64px] xl:flex xl:flex-row justify-around items-center">
+    <div className="py-[48px] px-[24px] xl:py-[80px] xl:px-[64px] xl:flex xl:flex-row justify-around items-center w-screen xl:w-[1280px] bg-gray">
       {/* Heading */}
       <div className="text-center">
       <p className="hidden lg:flex text-[24px] leading-[33.6px] text-left font-bold">

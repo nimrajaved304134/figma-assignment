@@ -19,8 +19,8 @@ const Categories = () => {
         : allCategories.slice(0, 3);
 
     return (
-        <div className="flex flex-col justify-center items-center gap-6">
-            <div className="w-full max-w-4xl mx-auto space-y-4 p-4 xl:p-0">
+        <div className="flex flex-col justify-center items-center gap-10 w-screen xl:w-[1280px] py-14">
+            <div className="w-full max-w-4xl mx-auto space-y-4 ">
                 <h1 className="font-bold text-[32px] leading-[41.6px] text-center">
                     Explore Courses By Category
                 </h1>
@@ -30,7 +30,7 @@ const Categories = () => {
 
                 {/* Grid Layout */}
                 <div
-                    className={`grid gap-6 xl:gap-[24px] xl:justify-between items-stretch ${
+                    className={`grid gap-6 xl:gap-[48px] xl:justify-between items-stretch ${
                         showAllCategories
                             ? "grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
                             : "grid-cols-1 lg:grid-cols-2  xl:grid-cols-3"
@@ -39,7 +39,7 @@ const Categories = () => {
                     {visibleCategories.map((category, index) => (
                         <Card
                             key={index}
-                            className="p-4 hover:shadow-lg transition-shadow w-auto h-[138px] lg:w-[400px] lg:h-[150px] xl:h-[100px] xl:w-[300px]  "
+                            className="p-4 hover:shadow-lg transition-shadow w-auto  sm:w-[595px] md:w-[720px] h-[138px] lg:w-[400px] lg:h-[150px] xl:h-[100px] xl:w-[300px] justify-center items-center mt-6 bg-gray"
                         >
                             <div className="flex items-center space-x-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-2">
                                 <div className="p-2 bg-gray-100 rounded-[5px] w-[100px] h-[100px] xl:w-[60px] xl:h-[70px] flex items-center justify-center text-center">
@@ -59,7 +59,7 @@ const Categories = () => {
                 </div>
 
                 {/* Toggle Button */}
-                <div className='flex justify-center'>
+                <div className='flex justify-center '>
                 <Button
                     onClick={() => setShowAllCategories(!showAllCategories)}
                     aria-label={
@@ -67,7 +67,7 @@ const Categories = () => {
                             ? "Show fewer courses"
                             : "View all courses"
                     }
-                    className="w-[155px] rounded-[5px] border-[1px] py-[12px] px-[24px] text-blue-600 font-medium hover:text-blue-700 transition-colors"
+                    className="w-[180px] h-[50px] rounded-[5px] border-[1px] py-[12px] px-[24px] text-black bg-white hover:bg-black hover:text-white border-black transition-colors mt-10"
                 >
                     {showAllCategories ? (
                         <>

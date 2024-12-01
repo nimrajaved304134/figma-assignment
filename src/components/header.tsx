@@ -7,7 +7,7 @@ import Menu from './menu';
 
 const Header = () => {
   return (
-    <div >
+    <div  className='w-screen xl:w-[1280px]'>
       <div className='flex-row justify-between border-b-2 border-black py-4 hidden xl:flex px-6'>
         <div className='flex flex-row'>
           <h1 className='text-[14px] border-r-2 border-black leading[21px] text-normal pr-4 '>Phone Number: 956 742 455 678</h1>
@@ -15,11 +15,11 @@ const Header = () => {
           </div>
         {/* Social Icons Section */}
       <div className="flex flex-row gap-[12px] items-center">
-        <Facebook className="w-[24px] h-[24px] cursor-pointer hover:text-blue-600" />
-        <Instagram className="w-[24px] h-[24px] cursor-pointer hover:text-pink-500" />
-        <Twitter className="w-[24px] h-[24px] cursor-pointer hover:text-blue-400" />git useInsertionEffect(didUpdate)
+        <Facebook className="w-[24px] h-[24px] cursor-pointer fill-black" />
+        <Instagram className="w-[24px] h-[24px] cursor-pointer " />
+        <Twitter className="w-[24px] h-[24px] cursor-pointer fill-black" />
         
-        <Linkedin className="w-[24px] h-[24px] cursor-pointer hover:text-blue-800" />
+        <Linkedin className="w-[24px] h-[24px] cursor-pointer bg-black fill-white" />
       </div>     
       </div>
 
@@ -36,8 +36,8 @@ const Header = () => {
       <Link href={'/'} className='hover:underline text-[16px] leading-[24px] text-normal'>About Us</Link>
       <Link href={'/'} className='hover:underline text-[16px] leading-[24px] text-normal'>Testimonial</Link>
 
-      <Button>Log in</Button>
-      <Button>Sign up</Button>
+      <Button className=' bg-black text-white hover:text-black hover:bg-white hover:border-[1px] hover:border-black'>Log in</Button>
+      <Button className='text-black bg-white hover:bg-black hover:text-white border-[1px] border-black'>Sign up</Button>
       </div>
       <div className='xl:hidden'>   <Menu/>
       </div>

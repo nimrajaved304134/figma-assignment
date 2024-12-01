@@ -2,7 +2,7 @@ import React from 'react'
 
 const Acheivements = () => {
   return (
-    <div className='py-[48px] px-[24px] items-center justify-center'>
+    <div className='py-[48px] px-[24px] items-center justify-center bg-gray'>
         <div className='flex-col flex gap-[48px]'>
             <div className='flex-col flex gap-[24px]'>
                 <h1 className='text-[32px] sm:text-[48] leading-[41.6px] sm:leading-[60px] text-center font-bold'>
